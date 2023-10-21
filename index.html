@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Login_Coca_Cola</title>
+
+    <style>
+        body{
+            background: lightcoral;
+            background: linear-gradient(to right, red, lightcoral);
+        }
+
+        a{
+            text-decoration: none;
+            color: black;
+        }
+
+        button > div:hover a{
+            color: white;
+        }
+
+        .link{
+            text-decoration: underline;
+            color: blue;
+        }
+
+        .bg{
+            background-image: url(img/coca_cola.jpg);
+            background-position:center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="container w-75 bg-primary mt-5 rounded">
+        <div class="row align nav-items-stretch">
+            <div class="col bg d-none d-lg-block col-md-5 col-lg-5 col-xl-6 rounded">
+
+            </div>
+            <div class="col bg-white p-5 rounded-end">
+                <div class="text-end">
+                    <a href="https://www.cocacoladeperu.com.pe/" target="_blank">
+                        <img src="img/logo.png" width="80" alt="">
+                    </a>
+                </div>
+                <h2 class="fs-bold text-center py-4">
+                    Bienvenidos
+                </h2>
+                <form action="/main.html">
+                    <div class="mb-4">
+                        <label for="Email" class="form-label">Departamento</label>
+                        <select class="form-select form-select-sm mb-1" aria-label=".form-select-sm example">
+                            <option selected>Seleccione departamento</option>
+                            <option value="1">Lambayeque</option>
+                            <option value="2">Piura</option>
+                            <option value="3">Lima</option>
+                          </select>
+                    </div>
+                    <div class="mb-4">
+                        <label for="Email" class="form-label">Correo</label>
+                        <input type="email" class="form-control" name="email" placeholder="Ingrese su correo" />
+                    </div>
+                    <div class="mb-4">
+                        <label for="password" class="form-label">Contraseña</label>
+                        <input type="password" class="form-control" name="password" placeholder="Ingrese su contraseña" />
+                    </div>
+                    <div class="mb-4">
+                        <input type="checkbox" name="connected" class="form-check-input">
+                        <Label for="connected" class="form-check-label">No cerrar sesión</Label>
+                    </div>
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-danger">Iniciar sesión</button>
+                    </div>
+                    <div class="my-3">
+                        <span>No tienes cuenta? <a class="link" href="https://facebook.c" target="_blank">Registrate ahora</a></span><br />
+                        <span ><a class="link" href="http://gmail.pom" target="_blank">Recuperar cuenta</a></span> <br />
+                        <span><a class="link" href="http://gooogle.xom" target="_blank">Ayuda</a></span>
+                    </div>
+                </form>
+
+                <div class="container w-100 my-5">
+                    <div class="row text-center">
+                        <div class="col-12 mb-3 fw-bold"> Iniciar Sesion</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <button class="bnt btn-outline-primary w-100 my-1">
+                                <div class="row align-items-center">
+                                    <div class="col-2 d-none d-md-block">
+                                        <img src="img/facebook.png" width="32">
+                                    </div>
+                                    <div class="col-12 col-md-10 text-center">
+                                        <a href=" http://facebook.com" target="_blank">Facebook</a>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="col">
+                            <button class="btn btn-outline-danger w-100 my-1">
+                                <div class="row align-items-center">
+                                    <div class="col-2 d-none d-md-block">
+                                        <img src="img/Gmail-Logo.png" width="32">
+                                    </div>
+                                    <div class="col-12 col-md-10 text-center">
+                                        <a href="https://gmail.com" target="_blank">Gmail</a>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <button class="bnt btn-outline-dark w-100 my-1">
+                                <div class="row align-items-center">
+                                    <div class="col-2 d-none d-md-block">
+                                        <img src="img/tiktok.png" width="32">
+                                    </div>
+                                    <div class="col-12 col-md-10 text-center">
+                                        <a href=" https://tiktok.com" target="_blank">Tiktok</a>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                        <div class="col">
+                            <button class="btn btn-outline-warning w-100 my-1">
+                                <div class="row align-items-center">
+                                    <div class="col-2 d-none d-md-block">
+                                        <img src="img/instagram.png" width="20" height="20">
+                                    </div>
+                                    <div class="col-12 col-md-10 text-center">
+                                        <a href="https://instagram.com" target="_blank">Instagram</a>
+                                    </div>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col text-center">
+                            <div class="d-grid mt-3">
+                                <button type="submit" class="btn btn-danger">
+                                    <a href="https://www.cocacola.co.pe/" target="_blank" class="text-white" >Coca Cola</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
